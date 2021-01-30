@@ -20,3 +20,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("articles/", include("articles.urls")),
 ]
+
+# from django.contrib.staticfiles.urls import staticfiles_urlpatterns  # image
+from django.conf import settings  # image
+from django.conf.urls.static import static  # image
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # image

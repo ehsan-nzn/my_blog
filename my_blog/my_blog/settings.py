@@ -123,3 +123,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
     "/articles/static/",
 ]
+
+MEDIA_URL = "/media/"  # image
+import os  # image
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")  # image

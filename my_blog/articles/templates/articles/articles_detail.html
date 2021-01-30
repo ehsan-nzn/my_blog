@@ -6,6 +6,7 @@
 
 {% block body %}
 <h3>{{ article.title }}</h3>
+<img src="{{article.image.url}}" alt="">
 <p>{{ article.body }}</p>
 <p>{{ article.date }}</p>
 {% endblock %}
